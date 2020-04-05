@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_05_102913) do
+ActiveRecord::Schema.define(version: 2020_04_05_125022) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
@@ -27,6 +27,12 @@ ActiveRecord::Schema.define(version: 2020_04_05_102913) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "password_digest"
     t.boolean "admin", default: false
+    t.string "address_number"
+    t.string "address_street"
+    t.string "address_town"
+    t.string "address_postcode"
+    t.string "telephone"
+    t.string "job_title"
   end
 
 end
